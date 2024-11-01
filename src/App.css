@@ -1,0 +1,45 @@
+/* #root {
+  
+
+} */
+:root {
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  /* Primary (Birincil) */
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral (Nötr) */
+
+  --Verydarkblue-main-BG: hsl(217, 54%, 11%);
+  --Verydarkblue-card-BG: hsl(216, 50%, 16%);
+  --Verydarkblue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ## Typography (Tipografi) */
+
+  /* ### Body Copy (Gövde Metni) */
+
+  --Fontsize-paragraph: 18px;
+
+  /* ### Font (Yazı Tipi) */
+
+  --Family: "Outfit", sans-serif;
+  --Weights: 300, 400, 600;
+}
+
+body {
+  margin: 0;
+  background-color: var(--Verydarkblue-main-BG);
+  font-family: var(--Family);
+}
+
+.card {
+  background-color: var(--Verydarkblue-card-BG);
+  width: 100%;
+  max-width: 350px;
+  min-width: 200px;
+  color: white;
+ 
+}
