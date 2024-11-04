@@ -4,5 +4,5 @@
 
 
 html{
-    font-size: 18px;
+    font-size: var(--Fontsize-paragraph);
 }

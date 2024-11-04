@@ -26,13 +26,17 @@
   /* ### Font (Yazı Tipi) */
 
   --Family: "Outfit", sans-serif;
-  --Weights: 300, 400, 600;
+}
+
+html {
+  font-size: var(--Fontsize-paragraph);
 }
 
 body {
   margin: 0;
   background-color: var(--Verydarkblue-main-BG);
   font-family: var(--Family);
+  box-sizing: border-box;
 }
 
 .card {
@@ -41,5 +45,27 @@ body {
   max-width: 350px;
   min-width: 200px;
   color: white;
- 
+}
+
+.imageEquilibrium:hover {
+  opacity: 0.5;
+}
+
+.imageEquilibrium {
+  transition: opacity 0.3s ease;
+}
+.imagecontainer:hover {
+  background-color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.imagecontainer:hover > .imageview {
+  display: block;
+}
+
+.imageview {
+  pointer-events: none;
+}
+.imagecontainer {
+  transition: background-color 0.3s ease;
 }
